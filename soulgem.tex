@@ -1,0 +1,317 @@
+\documentclass[10pt, conference, compsocconf]{IEEEtran}
+
+\begin{document}
+\title{The Soulgem Paper}
+
+\author{\IEEEauthorblockN{Jorge Aranda, Adrian Schr\"{o}ter, Daniela Damian, and Margaret-Anne Storey}
+\IEEEauthorblockA{Department of Computer Science\\
+University of Victoria\\
+Victoria, Canada\\
+Email: \{jaranda, schadr, danielad, mstorey\}@uvic.ca}
+}
+
+\maketitle
+
+
+\begin{abstract}
+
+I'm leaving the abstract until later.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+pink robots;
+\end{IEEEkeywords}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+
+People develop software, but the activities that each of them perform to do so differ from those of their colleagues: they divide their labour. For instance, some may write production code, others test it, and still others try to ensure that the product satisfies a real need. In order to talk about this division of labour, we abstract their responsibilities into a number of \emph{roles} (such as ``developer,'' ``tester,'' and ``product manager'') and we use these abstractions as labels to refer to the set of activities that we expect them to carry out. These labels appear everywhere in our academic literature, as well as in books for practitioners, human resources postings, blog posts, and everyday conversation.
+
+Despite this commonplace use, we have no clear indication that the people using these labels use them to refer to the same meanings. For instance, what does a ``developer'' actually need to do in order to fulfill her responsibilities? What should she avoid doing? When should we judge that she has failed to fulfill her responsibilities, and would the answer be generalizable throughout the many domains in which the software industry functions?
+
+In more mature domains, especially in those of critical importance, the division of labour is fairly formal and clear. Surgeons, anesthesiologists, nurses, and patients generally know what to expect from each other, in and out of the operating room. Knowing that someone is ``a nurse'' will bring out a set of expectations of behaviour regarding that person that have a good probability of being shared across the board. In our own community we use role labels just as directly and unthinkingly as in the medical domain, but without realizing (or such is the premise of our paper) that we may be talking about very different things, based on our varying assumptions, experiences, and cultures.
+
+This ontological drift \cite{Robinson1991} in our conceptualization of software development roles has unexplored repercussions for researchers and practitioners alike. Researchers may assume coordination dynamics between, for instance, analysts, designers, and developers that have no connection with the interactions between those groups in reality. Practitioners may not know how a newcomer's experience as a developer in a different organization will map into their own, or how to train him. For an abstraction as heavily used as role definitions in software organization, a closer look should prove beneficial.
+
+In this paper we did not attempt to provide a rigid definition of roles in software organizations; in fact we argue that such a task has poor prospects of success. Instead, (a) we examine the concepts of roles, positions, and expectations in software development groups, providing a theoretical framework based on sociological and organizational research, (b) we report the findings from a case study at two software organizations in which we used this theoretical framework to ground our observations and interviews, and (c) we discuss the implications for research and practice from the framework and from our findings.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Theoretical Framework}
+
+Sociologists and organizational scientists have studied the concept of roles in social groups over decades. We take their findings as the starting points for the discussion below, acknowledging them where appropriate.
+
+\subsection{Roles, positions, and labels}
+
+A \textbf{\emph{role}} is a set of expectations of behaviour placed on a person given their position, status, history, or preference \cite{Turner1956,Gordon1976,Rizzo1970}. This entails that roles are \emph{social constructions}: in a real sense, a ``developer'' is whatever the relevant social group determines that a developer should be. There is no archetypal developer. Upon learning that a colleague is a developer, all the members of the organization place a number of expectations on said colleague. Perhaps they expect the developer to spend as much time as possible writing production code, to be responsive to user requests for assistance, to validate the code produced by other developers, or to self-manage. Some colleagues may have no expectations other than that the developer should strive for the well-being of the organization. Other colleagues, especially if they interact with the developer on a regular basis, may have many more expectations, and these may be far more concrete. People outside the formal organization, but with connections or interactions to it, may hold other expectations on her behaviour. And the developer herself, the target of all these expectations, likely has a number of additional expectations on her own conduct: the activities she feels she should be doing to play her part in the organization.
+
+These expectations, taken together as a collection, conform the role. The resulting set may be straightforward or conflictive (a phenomenon called \emph{role strain} \cite{Goode1960}); it may even be impossible to satisfy in full. And since the expectations arise from the members of the group, there is no guarantee that they will match those of other groups: the meaning of a ``developer'' role in one organization may differ from that in another organization, and even within an organization the semantic differences may be profound.
+
+A \textbf{\emph{position}} or a \textbf{\emph{title}}, in turn, is an official statement of a person's goals and responsibilities. A role is not a position \cite{Turner1956}, though they often carry the same labels: one can play an architectural role and hold the position of Software Architect. A person's title plays a part in determining what she will feel compelled to do, and what she believes she is expected to do, but it is only one element of her role. Roles are enacted, positions are occupied (several people could fulfill the same role, despite their different positions; a person can fulfill several roles while holding a single position). For instance, one could carry an architectural role without holding an Software Architect position, and one could hold a Software Architect position without performing any of the activities that others would expect from an architect.
+
+We can see the positions in an organization, and their accompanying lists of responsibilities, as the explicit manifestations of what the fraction of the members of the organization that have the power to set those positions and responsibilities expect from their colleagues. In that sense they are a part of the total set of expectations placed upon organizational roles; a powerful part (especially if a position's responsibilities are tied to incentives and job evaluations), but still only a part.
+
+As indicated above, we often use \textbf{\emph{labels}} to refer to roles. A fitting label helps us convey the essence of the role to our interlocutors. But as we will see some roles have ill-fitting labels, and others have no labels or easy ways to refer to them in concrete terms (in many organizations there are people who are expected to ``keep the place together,'' for example). We must then remember that neither the label nor the formal position make the role. 
+
+
+\subsection{Roles and culture}
+
+Of course, the larger culture plays an important part in setting and steering our expectations. In some domains the culture is sufficiently strong to establish an interpretation of a role throughout the population. As we mention in the Introduction, in the medical domain, a combination of intensive training, codes of ethics, professional societies, and familiarization in person and through popular culture leads us to expect certain behaviours and activities from a doctor, and it leads the doctor to become attuned to the expectations placed upon her. We find it shocking if a doctor deviates from these expectations significantly. In our own domain, a similar combination of forces (education, past experiences, popular culture) allows us to make some general assumptions about software development roles that we can reasonably expect will hold in most cases. For example, we would be surprised if a tester did not spend at least part of his time preparing or running tests. And so, thanks to this larger culture, a newcomer to the test department will likely assume that he is expected to prepare and run tests, and his peers and supervisors will indeed have these expectations placed upon him, and this is what he will spend his time doing, thereby reinforcing the general idea of what testers do.
+
+However, in our domain, the forces from the larger culture have not yet enforced a singular view of what the different roles in a software organization consist of in any useful detail, or even which roles exist. As the evidence of our case study shows below, significant disagreements exist even within the same software organizations. Determining the reasons for this disagreement is beyond the scope of this paper; we speculate that the relative immaturity of the software industry, the wide variety of fields in which it functions, and the low barriers of entry to the profession all contribute to the phenomenon. But whatever the reason, the lack of conceptual uniformity in software development roles has implications for both research and practice, which we discuss in the coming pages.
+
+
+\subsection{Dysfunction and role fluctuation}
+
+In theory, we can use the definition of roles as sets of expectations of behaviour to build a conceptual map of roles in an organization: we find what every member of the organization expects from everyone else, and the aggregate of these expectations determines the roles that all members enact. But the members of the organization do not always act according to the expectations placed on them. The disagreement between expectation and actual behaviour is a major source of dysfunction in the organization.
+
+Several reasons explain these disagreements between expectation and performance. The expectation can be unrealistic (``testers should find all the bugs in our code''), the performance may fall short of reasonable demands due to poor skill or carelessness, the recipient of the expectation may be unaware of it (a failure to coordinate or communicate), or the expectation could be in conflict with other expectations placed on the same role or on the same person.
+
+Poor performance in the satisfaction of expectations is commonplace, but so is a performance that goes beyond the original expectation. If these disagreements recur over time, we undergo a shift in our expectations: we learn to expect the performance that is common to our experience, our ``new normal.'' And therefore, since roles are conformed by sets of expectations, and these expectations change over time, role definitions fluctuate in any social group based on past performance. 
+
+
+\subsection{Summary}
+
+The following points summarize the main elements of the previous discussion.
+
+\begin{itemize}
+\item Roles are \emph{sets of expectations of behaviour} placed on a person given their position, status, history, or preference.
+
+\item Therefore, roles are \emph{social constructs}. There is no official definition of what a certain role is.
+
+\item A set of expectations (a role) does not need to be satisfiable. When it is not, the individual enacting the role experiences \emph{role strain}.
+
+\item \emph{Positions} (or \emph{titles}) are official statements of a person's goals and responsibilities. Positions are not roles, though they often carry the same labels.
+
+\item We often use \emph{labels} to refer to roles, but some roles have ill-fitting or no labels in common use.
+
+\item Expectations are partly set by the larger \emph{culture}. However, in our domain, the culture has not enforced a singular view of the roles in software organizations.
+
+\item Disagreements between expectation and performance are a source of organizational \emph{dysfunction}.
+
+\item Performance that diverges from expectations, either positively or negatively, affects future expectations. Therefore, past performance in an organization causes \emph{fluctuations} in its role definitions.
+\end{itemize}
+
+Although most of these points are well established in the sociological literature, to our knowledge they had not been previously examined under the particular characteristics of software organizations. We provide empirical evidence to support them in the following pages.
+
+% TODO: Add something about specialization with growth in this section?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Related Work}
+
+Sociologists and organizational scientists have explored the topic of professional and social roles for many years. Biddle \cite{Biddle1986} provides a good point of entry into the theoretical work in this area, as it teases out the confusion and the overloading of the concept of roles. His overview covers five main variations of role theory: \emph{functional} role theory (roles are functions in a stable social system), \emph{symbolic interactionist} role theory (roles evolve through social interaction, norms only provide broad imperatives), \emph{structural} role theory (roles are patterns of behaviour shared among people in similar positions in the social structure), \emph{organizational} role theory (which assumes that roles are mainly set by social positions in preplanned, rational settings), and \emph{cognitive} role theory (which focuses on determining which conditions give rise to expectations, how to measure expectations, and what impact do they have on social conduct). Our theoretical framework above draws mainly from the symbolic interactionist theory as described by Biddle, but although there are significant philosophical and methodological differences between role theories, they are compatible on many essential points. As Biddle points out, ``most versions of role theory presume that expectations are the major generators of roles, that expectations are learned through experience, and that persons are aware of the expectations they hold.''
+
+A similar conceptualization comes from Turner \cite{Turner1956}, who states that roles are sets of norms, where a norm is an expected or appropriate behaviour that should be consistent. A role ``is made up of all those norms which are thought to apply to a person occupying a given position.''
+
+Although there are roles that everyone in an organization is expected to enact (such as being a good team member), the roles that are useful in most analyses are those that allow us to differentiate between people. As Ashforth and Mael \cite{Ashforth1989} point out, we define ourselves partly in opposition to what others do. These distinctions generate both conflicts and opportunities for the members of a social group. Goode \cite{Goode1960} talks about the stresses related with role strain, argues that in general an individual's role obligations are overdemanding, and discusses coping mechanisms commonly used. In contrast, Sieber \cite{Sieber1974} claims that the additional demands caused by accumulating roles also bring rewards, and that these rewards may well compensate for the corresponding strain in many cases. 
+
+A good analysis of role fluctuation comes from Nicholson \cite{Nicholson1984}. He studied how people adapt to new work roles, and determined there are four main ways in which they do so, based on how much they change themselves and the environment: replication (neither the person nor the environment change much), absorption (personal development), determination (role development), and exploration (the person develops both herself and the meaning of her role).
+
+% TODO: Check if Indi's papers, Fernando's paper, or those of Andy Begel's, are appropriate in this discussion.
+
+Researchers discuss roles frequently, in both prescriptive and descriptive efforts, although prescriptions appear to outnumber descriptions. Chief Programmer Teams \cite{Baker1972} are an early example in our literature; they are modelled after surgical teams, with a Chief Programmer assisted by a group of professionals. Process definitions tend to include role prescriptions: Scrum \cite{Schwaber2001}, for instance, calls for a Scrum Master, a Product Owner, and a number of Developers. Practices also prescribe roles, but in a more minute detail and, usually, for a shorter term. Thus in a Fagan inspection \cite{Fagan1976} we have a Moderator, a Reader, a Coder, and several Reviewers.
+
+Recent work in this community regularly discusses roles in interesting ways, but without a solid or consistent theoretical framework. Hoda \emph{et al.}\ \cite{Hoda2010} identified six ``informal roles'' that team members adopt in self-organizing teams. These roles (Mentor, Co-ordinator, Translator, Champion, Promoter, and Terminator) are separate from the people and positions that enact them (Agile Coaches, Developers, Business Analysts), a distinction we advocate for in this paper. But several of the ``roles'' they identify (such as Champion and Promoter) are too fine-grained, and they fall under the category of ``expectations'' from our perspective; expectations that are bundled with others to conform a richer, multi-faceted role. Moe \emph{et al.} \cite{Moe2010} use Dickinson and McIntyre's \cite{Dickinson1997} teamwork model to provide such a set of expectations for members of self-managing teams. While useful, this model is overly generic for our purposes, as it does not allow us to study how or why differences in expectations and specializations within teams arise.
+
+Other researchers have attempted to study roles structurally, as they arise by social network interactions. For instance, Toral \emph{et al.}\ \cite{Toral2010} studied ``middle-men'' or ``brokers,'' and Ricca and Marchetto \cite{Ricca2010} examine the role of ``heroes,'' in open source projects. Their structural analysis allows them to scale to large projects and electronic repositories at the expense of detail. To our knowledge, more sophisticated analyses of roles in social networks, such as the blockmodelling work of Breiger and Pattison \cite{Breiger1986}, has not been carried out in our domain.
+
+We can also find rich descriptions of some roles in software development. Martin \emph{et al.}\ \cite{Martin2007} report a detailed picture of the testing role carried out by the developers in a software organization, and of the reasons for which they deviate from the testing prescriptions in the literature. F{\ae}gri \emph{et al.} \cite{Faegri2010} provide a rich report of the consequences of an attempted role fluctuation in a case in which developers attempted to rotate the job of customer support.
+
+Finally, Litecky \emph{et al.}\ \cite{Litecky2010} report on the titles offered and the skills required in the job market in computing. Their analysis is useful for a study of roles in software organizations, as these titles and skills give us an indication of the roles that managers and human resources professionals perceive as important for their organizations.
+
+% TODO: Add a mention to Sabrina's work
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Method and Study Execution}
+
+\subsection{Study Design}
+
+We performed a qualitative empirical study based on the theoretical framework presented above to improve our understanding of roles in software organizations. Since there is already a significant amount of theoretical work on the concept of roles in organizations, we did not need a grounded theory approach. We therefore chose to follow Yin's case study methodology \cite{Yin2003}. We executed an explanatory two-case case study with two embedded units of analysis (software organizations and roles).
+
+We formulated eight research questions to guide our data collection and analysis. For each of them, we also formulated a corresponding proposition based on the theoretical framework we delineate above.
+
+\textbf{\emph{RQ1:}} Do roles vary considerably between and within software organizations?
+
+\emph{Proposition:} Roles vary considerably both between software organizations and within them. The sets of expectations placed on their members are different in significant ways.
+
+\textbf{\emph{RQ2:}} What common roles are there in software organizations? Of what expectations are they built from? Can we provide a simple classification of roles?
+
+\emph{Proposition:} We do not expect to be able to provide a simple classification of roles. However, we hypothesize that some expectations often come together, and that these patterns will allow us to form a partial picture of roles in software development.
+
+\textbf{\emph{RQ3:}} Why are expectations clustered in roles in the way they are? That is, what is the logic, if any, behind organizing expectations in the particular ways in which they have been, and not in others?
+
+\emph{Proposition:} Expectations are clustered in roles based on a combination of institutional, historical, structural, and personal factors. Institutional factors refer to the larger culture: what we generally expect a person fulfilling a certain role should be doing. Historical factors consist of past experiences in the organization: what people fulfilling this role or similar roles have typically done in the past. Structural factors refer to the power and affordances available to a person by virtue of their position in the social structure. Personal factors include the preferences and background of the agents enacting the role.
+
+\textbf{\emph{RQ4:}} Is there a significant divergence between roles and positions in software organizations? If so, why, and what are its consequences?
+
+\emph{Proposition:} There is a significant divergence between roles and positions, and the reason is that position is a structural factor, as specified above, and there are many other factors that contribute to the shaping of a role.
+
+\textbf{\emph{RQ5:}} Why are some expectations consistently unsatisfied, and what consequences does such dissatisfaction bring?
+
+\emph{Proposition:} Expectations may be consistently unsatisfied due to (a) poor performance, (b) unreasonable demands, (c) role strain, or (d) coordination problems.
+
+\textbf{\emph{RQ6:}} Are there purely technical roles? Can we disassociate organizational and social concerns in technical role descriptions or prescriptions?
+
+\emph{Proposition:} There are no purely technical roles. There are organizational and social concerns intertwined with the technical expectations placed on all members of the organization.
+
+\textbf{\emph{RQ7:}} How do roles change over time in a software organization?
+
+\emph{Proposition:} There are two main drivers of role fluctuation: organizational growth, which leads to specialization \cite{Blau1971,Haveman1993}, and organizational dysfunction, which leads to rearrangements of expectations.
+
+\textbf{\emph{RQ8:}} What media do people enacting similar roles use to communicate to each other? What media do they use to communicate with others?
+
+\emph{Proposition:} People enacting similar roles use similar communication media. They communicate with people enacting different but interfacing roles through other media, which act as a boundary object between them \cite{Bowker1999}.
+
+
+
+\subsection{Study Execution and Analysis}
+
+To answer our research questions, we collected field data from two software organizations in the area of Victoria, Canada. Our case selection was opportunistic: we wanted groups that develop software as their main activity, and whose headquarters were located in our vicinity. We contacted managers in both organizations and negotiated access to their sites in return for feedback on their development practices.
+
+We carried out our case study during the Winter and Spring of 2011. The first author spent about six weeks performing observations, three weeks at each of the two sites, sitting at a desk in their development areas, and attending to stand-up meetings, product meetings, all-hands meetings, and several other gatherings and social events. He also gained user access to the issue tracking and project estimation systems at both sites, and manually examined several issues, bugs, and milestones.
+
+The first author also interviewed people spanning most areas of both organizations. He performed 36 interviews, most of them lasting almost one hour. In both sites the number of interviewed corresponded to about 50\% of the total number of organization members at the time.
+
+Following Yin's \cite{Yin2003} suggestions, we analyzed all the observation and interview data examining whether it supported or challenged our study propositions. Whenever possible we triangulated our evidence. We were also particularly interested in evidence that did not fit with our theoretical framework, in order to refine the latter for future studies.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Details from the Field Sites}
+
+\subsection{Gallium}
+
+Gallium was the first organization we studied.\footnote{For confidentiality reasons, the names of all organizations and people in this discussion are fictional, and some details not central to our findings have been obfuscated.} It is a biotechnology software organization headquartered in Victoria; it offers specialized software products commonly used by academic groups, pharmaceutical companies, and corporations in the biotechnology sector. At the time of our observations it employed about 45 people. Most of them worked at the Victoria office, while several members of the management team had their offices in the American West Coast, and the company also had a few agents, mostly in charge of sales, in Europe.
+
+The development group was formed by 17 people, including the Director of Software Development, two Tech Leads, three Team Leads, seven Developers, three QA Analysts, and a Buildmaster. The development group was divided in four teams, although during our observations one of the teams was being phased out and its members were transitioning into another team. The largest team had eight people (a Team Lead, five Developers, and two QA), and was in charge of maintaining and iterating on the main product of the organization. The second largest had five people, counting the transitioning employees (a Team Lead, the two Tech Leads, one Developer, and one QA), and was in charge of recreating and streamlining the workflow and user interface of the main product, without being dragged by the burden of the product's legacy code. The third team (consisting of a Team Lead and a Developer) focused on generating custom scripts and solutions for particular customers, using their own product's API. The fourth team (its members already accounted for above) was wrapping up on its customer obligations for a secondary product. Organizationally, the Buildmaster was not associated with any one team, although he interacted mostly with the first and largest team. Everyone in the development group, except for its Director, worked in the same shared area: an open space with cubicles arranged in such a way as to demarcate smaller areas functioning as team rooms.
+
+Several groups interacted with or supported the development group. There was a Product Definition group formed by three people (two Product Managers and a Product Design Lead), a Program Manager, a Project Management group (one Project Management Lead and two Project Managers), a Customer Support group (one Lead and two to three Customer Support Analysts), several Field Application and Field Implementation Specialists (numbers varied during our observations, but were never more than four), a Systems Administrator, several Sales Executives, a Graphics Designer, an Office Administrator, and eight other high-ranking staff, including the CEO and four VPs. Among these people most of those who worked in the Victoria headquarters did so in personal offices along the edges of the development group's cubicle area, or in a second cubicle area connected to the first. An exception was one of the Product Managers, who sat with a development team to be able to provide feedback more rapidly.
+
+Our observations began at an unusual point in the organization's history, as it had recently gone through a round of layoffs. While this was an unfortunate situation for the organization, it allowed us to explore in greater detail the mechanics of shifting expectations across the organizational structure, and the employees' negotiation of the ``new normal'' at their offices.
+
+The development group followed a lifecycle process loosely based on Scrum \cite{Schwaber2001}. The largest development team has a six-week release cycle; the second largest structures its work on shorter (two-week) cycles, but for internal purposes only, as it had not yet made any releases of its software by the time our observations ended. All teams had a daily stand-up meeting, and the Team and Tech Leads, the Buildmaster, and the Director had a second daily stand-up meeting. The Team Leads functioned as the Scrum Masters, but the Product Owner was not defined consistently. The group also deviated from the simple backlogs and story cards practices (requirements were often specified in greater detail, and they were derived from contractual obligations acquired by the sales team or from urgent issues identified by Field Specialists or Customer Support), but it paid attention to Agile metrics such as burndown and velocity.
+
+
+
+\subsection{Cobalt}
+
+Cobalt was the second organization we studied. In contrast to Gallium, the group is publicly funded. It is a computing and data processing and storage unit servicing Canadian and international scientists in one particular field. It is part of a research institute, but except for the sharing of support and hardware staff, it has a limited interaction with the rest of the institute. At the time of our observations the group consisted of about 22 people, but the figure cannot be exact as membership is fluid. Our figure includes visiting scientists that collaborate in some sense with the group's software development activities. All of Cobalt's employees worked at their Victoria offices.
+
+Cobalt is divided in three subgroups: Software, Operations, and Science. The Software group has 9 members, including the head of the group. Again in contrast with Gallium, the developers in Cobalt are not divided in teams. Nominally at least, all may work and request assistance for any of the projects of the group (as we will see, there was an explicit push to achieve this organizational structure in response to concerns with the more compartmentalized structure of the past). However, every project has a Team Lead, and the group has five Subsystem Leads---a subsystem being an area of interest and expertise for the group, such as Web Services or User Interface---that coordinate the work of those subsystems for each project. There are no QA specialists in this group; developers are expected to test their work and that of their peers.
+
+The Operations group supports Software in coordinating, configuring, and ensuring the appropriate execution of its projects and processes. It includes the head of the group, a database administrator, and two software specialists. The Science group is formed by researchers: government scientists, visiting scientists, and postdoctoral fellows. There were seven at the time of our observations. As the name indicates, they are tasked with doing scientific research, not with writing production code. However, they often depend on the work of the Software group, and they have a significant say in the direction that the Software group takes. Although officially the Science group, like the other two, has a head, his functions are more those of a coordinator than a leader. The members of the Science group have considerably more autonomy in determining their activities. There are two staff employees in the group that do not form part of any team in particular: the Group Leader, and a Project Administrator.
+
+The layout of the group's offices presented a mix of private offices and shared spaces with cubicles. Seniority seemed to be the main criterion in assigning private offices: more junior members of all three groups, and our observer, sat in the shared offices.
+
+Our observations at Cobalt happened during a period of few changes or upsets. There had been two major restructures of the group (first, when the Software, Operations, and Science divisions were created; later, when the Software group broke its compartmentalization), but they had both taken place years before our visit.
+
+For a few months since and including the period of our observations, some group members had been experimenting with some Agile practices. They introduced daily stand-up meetings in their projects, as well as continuous integration testing, but have had only partial success in getting test-driven development or code reviews adopted in the group. And although they work in one-week iterations, there is no push for a release at the end of each cycle; the iterations are merely used as an opportunity to set the priorities for the next week.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Findings}
+
+We present our findings organized by the research question they address.
+
+\subsection{Role Variation (RQ1)}
+
+We found overwhelming evidence of variation in roles between and within organizations. In fact, it was difficult to find people in any site with roughly the same role. We offer several examples of this phenomenon, as well as the few counterexamples we found.
+
+\emph{Product Managers, Gallium:} There are mainly three people with the role of steering the organization's products, prioritizing its backlog, and coordinating with customers. These are the two Product Managers and the Product Design Lead. Some Gallium employees see the work of the three as interchangeable: one of them will be in charge of the high-level decisions of the product they're working on, and to some extent, they believe that these three people are in control of the product's direction. Others (typically those who have a closer interaction with this trio) assign different expectations to each, and a closer look reveals that there are indeed significant differences between their activities. The Product Design Lead is concerned with documenting the requirements of new functionality, he fulfills a ``historian'' responsibility (sharing design rationale with developers and explaining the pitfalls in some approaches), and he is active in shaping the organizational structure, having helped create some groups and practices throughout his time in the organization. Of the two Product Managers, one has an inside-looking approach, coordinating the development of a product and determining what requirements will make it into the product's roadmap, and when. The other Product Manager has a more outside-looking approach. He has a Ph.D.\ in the organization's area of expertise, and his presence at client meetings, trade shows, and conferences legitimizes the organization. He also understands how the users would interact with the product, and provides feedback on how to improve the product's workflow and user interface to bring it closer to the users' mental model. Additionally, we could argue that other people in the organization also performed some Product Management activities unofficially: A Customer Services Representative or a Field Specialist could persuade developers to focus on the features that cause them the most pain, for example. In sum, although all three employees have similar goals, the detailed expectations placed on them vary considerably, and are not interchangeable. Furthermore, people without a Product Management position also have some unofficial Product Management expectations.
+
+\emph{Team Leads, Gallium and Cobalt:} Every team in the sites we studied had a Team Lead, but this leadership role was tinged by the characteristics of the team and project in question. For instance, in Cobalt, team membership is fluid---every developer may be expected to work on any project, according to need---and some Team Leads performed coordination tasks, others had a dormant leadership position, waiting for new issues or concerns in their projects to arise, and yet others were more like ``first responders'' than coordinators, requesting for assistance if the work load for their projects became too much for a single person. In Gallium, there were three Team Leads at the time of our observations. They shared a few characteristics: they were expected to develop software, and they reported to their Director. But their roles were quite different. The Team Lead of the largest team would spend about half of his time developing software; among his lead activities he meets with customer service representatives, project and product managers, and he performs estimation tasks and analyzes the performance of his team. A second Team Lead is in charge of a product about to be discontinued, and that responsibility takes a small part of his time. He is also associated with another team, but since that team has an abundance of ``leads'' (it includes the two Tech Leads of the organization), his coordination and reporting expectations are minimal. The third Team Lead has one other team member, a newcomer to the organization, and his leadership expectations become mostly mentoring and training rather than coordination and performance analysis.
+
+\emph{Developers, Gallium and Cobalt:} The quintessential role in the software development literature was one of the hardest to pin down. A developer, of course, is expected to write production code---but what else? There is a multitude of answers to that question: some developers are expected to test their own code, some are expected to perform code reviews, some are expected to provide architectural input, some are expected to carry their own requirements analysis, some are expected to socialize, some are expected to interface with customers. None in our sample is expected to perform all of the above.
+
+\emph{``Glue'' role, Gallium and Cobalt:} In both sites we found at least one person who others referred to, with more or less these words, as ``the glue that holds this place together.'' They generally meant a person that would do all sorts of things, little or large, in a variety of contexts, stuff that falls through the cracks of the formal organization.\footnote{Note that, as opposed to the previous examples, this role has no clear label to refer to it.} But the kind of stuff that falls through the cracks was different in both sites, and therefore the expectations placed on this ``glue'' role were different. In Cobalt, much of this referred to sheltering the organization from bureaucratic processes and constraints. In Gallium, it partly meant helping create and shape new and needed groups, and partly to perform activities that nobody else was tasked with doing, such as some kinds of documentation.
+
+\emph{Project Managers, Gallium:} These project managers are an interesting counterexample to our first finding, to some extent. Although there are significant distinctions between them (one has a project management leader role, another creates templates and institutes new processes, and a third and more junior project manager implements them), the similarities in their roles seem to outweigh the differences. The main reason seems to be that these Project Managers bring a fairly specific and standardized way of doing things with them, in the form of a Project Management Body of Knowledge and certification. Part of their strategy appears to be to define their role with sufficient precision, and to enforce their definition in the rest of the organization. No other role that we examined had the emphasis on role definition and consistency that the Gallium Project Managers had.
+
+In summary, as proposed by our theoretical framework, \textbf{we found a considerable inconsistency in role definitions both within and between organizations}. Roles (sets of expectations) are socially constructed: a developer here is not the same as a developer there, since what we expect of developers here and there varies. Part of the social construction occurs at the societal level, so that we generally expect testers to test, developers to develop, and managers to manage. In one case, such as that of Project Managers at Gallium, this broader influence is strong enough to shape most aspects of the role. In most roles in the software organizations we studied, however, this is not the case, and most of the relevant details of what it actually means to test, develop, or manage is defined by the group.
+
+% Common roles? common expectations?
+
+% There is a confusion between roles and positions: We have positions that attempt to approximate roles, but they're not the same thing. A role is a set of responsibilities that people place on a person by virtue of his or her background, group membership, experience, position in the organization, cultural expectations, and stated commitments.
+
+% The fact that expectations are placed does not mean that they are satisfied. (The expectee may not know or understand the expectation; the expectation may be beyond her means; the expectation may cause a role stress, etc.)
+
+% Therefore a dynamic of expectations that works in theory may not work in practice. Similarly, a dynamic that *doesn't* work in theory may work in practice, due to the initiative of some people who contribute beyond what the rest expects of them. However, in both cases, over time the organization grows to expect the typical performance of others (of the under/over performers), and a new understanding (a new expectation,  a new norm) takes hold.
+
+% Roles, even technical roles, include a number of organizational and social expectations that its enactors should satisfy. No role is purely technical, and often the organizational / social / political is a prime concern.
+
+
+
+% On growth
+
+% As an organization grows, labour is divided further, roles become more specialized. Some expectations that took a fraction of someone's time now are more demanding, hence the tendency to formalize them as an important part of a new role. But note that organization members can fight the specialization trend.
+
+% Some expectations arise or are solidified due to the weight of the organization or to deal with some sort of dysfunction or structural situation.
+
+
+
+% On media
+
+% People enacting different (but connected) roles communicate through boundary objects. Within roles, however, the communication media could be different. Since (a) communication media vary across roles, and (b) most or many roles are essential to the functioning of the organization and the satisfaction of its goals, studying/mining a single medium will miss important people and interactions.
+
+
+
+% On the expectations that occur over and over (move to earlier?)
+
+% In a software organization, some expectations arise over and over. We can consider them a necessity for these organizations. A list will be arbitrary perhaps (we will almost surely miss some important ones?) but listing some key expectations is still useful.
+% - Develop production code
+% - Explore / scout development
+% - Develop configuration code
+% - Develop low level (unit) tests
+% - Develop high level (integration) tests
+% - Assign tasks
+% - Review progress
+% - Set direction, vision goals
+% - Resolve interpersonal conflicts
+% - Represent users
+% - Take care of what falls between the cracks
+% - and so on...
+% I think it will be worth listing all the important ones. Perhaps more than a list? The key ideas here are that (a) these expectations *need* to be satisfied, or the performance of the organization will suffer, (b) some of them are conceptually closer to each other, and having them be carried out by the same person or persons should be more effective from a coordination perspective (see Proportionality, Maturity), and (c) understanding these patterns of responsibility pairing should yield efficiency gains more generalized.
+
+
+
+\section{Discussion}
+
+% First a brief summary of the findings
+
+% Second, state that the main theoretical foundations held, and were improved upon
+
+% Implications for research: on media, important one. On better role definitions.
+
+% Implications for practice: an awareness that role specialization is a trend that's hard to fight, and a role that makes sense in the short term to deal with a dysfunction may become a department later on that is too hard to control. Also an awareness that what people nominally do does not translate into the benefit that they bring to organizations, as their formal position does not match the expectations that people have of them.
+
+% Anything else?
+
+
+
+\section{Conclusion}
+
+% Brief summary of findings and implications.
+
+% Future work.
+
+
+
+\section*{Acknowledgments}
+Thanks for all the fish.
+
+\bibliographystyle{IEEEtran}
+\bibliography{biblio}
+
+\end{document}
+
+

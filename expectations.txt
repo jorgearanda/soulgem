@@ -1,0 +1,88 @@
+Technical - Core
+----------------
+
+* Write new-feature code
+* Write bug-fix code
+* Write customization (or script) code
+* Maintain legacy code
+
+
+Technical - Periphery
+---------------------
+
+* Write low-level (or unit) test code
+* Write high-level (or integration) test code
+* Write build code
+* Write configuration and implementation code
+* Write technical documentation
+* Write user documentation
+* Write experimental (or exploratory) code
+* Design user interface
+* Bundle and prepare a release
+* Write and maintain tools to aid in development
+
+
+Technical - High level
+----------------------
+
+* Design system architecture
+* Elicit requirements
+* Document requirements
+* Set roadmap for system (prioritize requirements)
+* Provide domain context to non-domain experts (user proxy)
+* Determine if product meets quality goals
+
+
+Technical - Expertise
+---------------------
+
+* Provide historical perspective on design decisions
+* Provide guidance (mentorship) to newcomers on technical issues
+* Tackle the toughest technical issues and bugs
+
+
+Technical - Management
+----------------------
+
+* Provide estimates on remaining or potential tasks
+* Document (notify) on one's own progress
+* Determine lifecycle process and practices
+* Assign low-level tasks (tickets) to individuals
+* Monitor low-level task (ticket) progress
+* Assign high-level tasks (projects) to individuals
+* Monitor high-level task (project) progress
+* Coordinate a product release or implementation
+* Handle obstacles and interruptions for technical teams (PoC)
+* Connect an issue with the person with appropriate expertise
+
+
+Organizational - External Interface
+-----------------------------------
+
+* Provide domain legitimacy to organization
+* Provide technical legitimacy to organization
+* Advocate for the resolution of user/customer problems
+* Receive and respond to user feedback
+* Obtain new users
+* Service current users
+* Obtain and maintain sources of funding
+* Represent the organization's interests to funders/customers
+
+
+Organizational - Management
+---------------------------
+
+* Deal with personnel issues
+* Deal with financial issues
+* Deal with clerical issues
+* Deal with system administration issues
+* Deal with otherwise unattended issues
+* Set up and modify organizational structure
+* Communicate organizational status and news
+
+
+Organizational - Strategic
+--------------------------
+
+* Determine long-term vision for products
+* Determine emphasis on new market areas
