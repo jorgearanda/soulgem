@@ -1,0 +1,42 @@
+,,"SW Directors",,"Tech Leads",,,,"Team Leads",,,,,"Devs",,,,,,,,"QA & Ops",,,,"Prod Mgmt",,,,"Project Mgmt",,,"Support & Field",,,,,
+"Type","Expectation","G","C","G1","G2","C1","C2","G1","G2","G3","C1","C2","G1","G2","G3","G4","G5","G6","C1","C2","G1","G2","G3","C1","G1","G2","G4","C1","G1","G2","C1","G1","G2","G3","G4","C1","C2"
+"Technical – Core","Write new-feature code",,,2,2,1,1,1,2,,2,1,1,2,,,,1,2,2,,,,,,,,,,,,,,,,,
+,"Write bug-fix code",,,1,1,1,1,1,2,,2,2,1,1,1,,1,,2,1,,,,,,,,,,,,,,,,,
+,"Write customization (or script) code",,,,,,,,,2,,,,,,2,,,,,,,,,,,,1,,,,,2,,,,
+,"Maintain legacy code",,,,1,2,1,2,,,2,2,2,,2,,2,2,,,,,,,,,,,,,,,,,,,
+"Technical – Periphery","Write low-level (or unit) test code",,,1,1,,1,1,1,1,1,1,1,1,,1,1,1,,,,,,,,,,,,,,,,,,,
+,"Write high-level (or integration) test code",,,,,1,,,,,2,,,,,,,,,,2,1,,,,,,,,,,,,,,,
+,"Write build code and prepare releases",,,,,,,,,,1,,,,,,,,,,,,2,,,,,,,,,,,,,,
+,"Write configuration and implementation code",,,,,,,,,1,,,,,,,,,,,,,,,,,,,,,,,2,,,,
+,"Write documentation",,,,1,,1,,,1,,1,1,,1,1,,,,,1,,1,,2,,2,,,,,,,,,,
+,"Write experimental (or exploratory) code",,,1,2,,2,,,,,,,,,,2,,1,,,,,,,,,,,,,,,,,,
+,"Design user interface",,,2,1,,,,,,,,,,,,,,,2,,,,,1,2,,,,,,,,,,,
+,"Write and maintain tools to aid in development",,,,,,1,,,,1,,,,,,,,,,,,2,1,,,,,,,,,,,,,
+"Technical – High Level","Design system architecture",,,2,2,2,2,,,,1,1,,,,,,,,1,,,,,1,,,,,,,,,,,,
+,"Elicit and document requirements",,,,,,1,,,,1,1,,,,,,,,,,,,,2,2,2,,,,,,,,2,1,2
+,"Set roadmap for system (prioritize requirements)",1,,1,,,1,1,,,2,,,,,,,,,,,,,,,2,2,2,,,,,,,,2,1
+,"Provide domain context to non-domain experts (user proxy)",,,,,,,,,,,,,,,,,,,,,,,,,2,,2,,,,,2,,2,2,
+,"Determine if product meets quality goals",1,,1,1,,,1,,,1,,,1,,,,,1,1,2,2,1,2,,2,,1,,,,,,,,1,1
+"Technical – Expertise","Provide historical perspective on design decisions",,,2,1,,2,,,,,,2,,2,,,,,,,1,,,2,,,,,,,,,,,,
+,"Provide guidance (mentorship) on technical issues",,,1,,,,,,2,2,2,2,,,,,,,1,,,,,,,,,,,,,,,,,
+,"Tackle the toughest technical issues and bugs",,,,2,1,2,2,,2,,,1,,,,2,,,,,,,,,,,,,,,,,,,,
+"Technical – Management","Provide estimates on remaining or potential tasks",1,1,2,1,1,,2,,1,2,,,,,,,,,,,,,,,1,1,,2,2,1,,,,,,
+,"Determine lifecycle process and practices",2,1,1,,,,1,,1,2,1,,,,,,,,,,,,,,,,,1,2,,,,,,,
+,"Assign low-level tasks (tickets) and monitor progress",,1,1,,,,2,,1,1,,,,,,,,,,,,,2,,,1,,1,1,,1,2,1,,,
+,"Assign high-level tasks (projects) and monitor progress",2,2,,,,1,,,,,,,,,,,,,,,,,,,,1,,,,,,,,,,
+,"Coordinate a product release or implementation",1,1,1,,1,1,2,,,2,,,,,,,,,,,1,2,2,1,2,2,,2,2,1,,1,,,,
+,"Handle obstacles and interruptions for technical teams (PoC)",1,2,,,,,2,1,1,,1,,,,,,,,,,,,2,,,,,2,2,2,,,,,,
+,"Connect an issue with the person with appropriate expertise",1,1,,,,1,2,,,,,,,,,,,,,,,,,,,,,1,1,,1,2,2,,1,
+"Organizational – External Interface","Provide domain legitimacy to organization",,,,,,,,,,,,,,,,,,,,,,,,,2,,2,,,,,,,,,
+,"Provide technical legitimacy to organization",2,1,2,,,2,,,,,1,,,,,,,,,,,,1,,,,,,,,,,,,,
+,"Advocate for the resolution of user/customer problems",1,2,,,,,1,,,,,,,,,,,,,,,,1,,1,,,2,2,,2,2,2,1,2,2
+,"Receive and respond to user feedback",,2,,,,,,1,,1,1,,,,,,,,1,,,,1,,,,2,2,2,,2,2,2,,1,1
+,"Obtain new users or sources of funding",,2,,,,,,,,,,,,,,,,,,,,,,,,,1,,,,,,,2,,
+,"Represent the organization's interests to funders/customers",,2,,,,1,,1,,,,,,,,,,,,,,,,,1,,2,,,,,,,1,1,1
+"Organizational – Management","Deal with personnel issues",2,2,,1,,,1,1,,,,,,,,,,,,,,,1,,,,1,,,2,,,1,,,
+,"Deal with financial, clerical, or sysadmin issues",,1,,,,,,,,,,,,,,,,,,,,,1,,,,,,,2,,,,,,
+,"Deal with otherwise unattended issues",1,1,,,,1,1,,,,,,,,,,,,,,2,,1,,1,,1,,,2,,,,,,
+,"Set up and modify organizational structure",2,2,,,,1,,,,,,,,,,,,,,,,,1,,,1,1,,,,,,1,,,
+,"Communicate organizational status and news",2,2,,,,,1,,1,,,,,,,,,,,,,,1,,,,,1,1,1,,,1,,,
+"Organizational – Strategic","Determine long-term vision for products",1,2,1,,,2,,,,,,,,,,,,,,,,,,,2,,2,,,,,,,,,
+,"Determine emphasis on new market areas",,1,,,,1,,,,,,,,,,,,,,,,,,,2,,1,,,,,,,,,
