@@ -19,110 +19,114 @@
     \hbox{\vrule\vbox{\hrule\hbox to 1\qd
             {\vrule depth0pt height#6 width \qda#5\vrule depth0pt height#6 width \qdb\hfill}\hrule}\vrule}
     }\hfil}}
-\def\rrr#1#2#3#4{\rrrr{#1}{#2}{#3}{0.19cm}{#4}{1.5ex}}
+\def\rrr#1#2#3#4{\rrrr{#1}{#2}{#3}{0.15cm}{#4}{1.5ex}}
 
 \def\w{\rrr{0}{1}{1}{\color{white}}}
 \def\l{\rrr{0}{1}{1}{\color{mygray}}}
 \def\g{\rrr{0}{1}{1}{\color{yourgray}}}
 \def\b{\rrr{0}{1}{1}{\color{black}}}
+\def\0{\w}
+\def\1{\l}
+\def\2{\b}
+\def\angle{90}
 
 \begin{table*}[tb]
 \centering
 %\footnotesize
 %\scriptsize
-\begin{tabular}{l@{\hspace{-3cm}}r@{\hspace{2pt}}c}
+\begin{tabular}{l@{\hspace{-3cm}}rc@{\hspace{5pt}}c@{\hspace{5pt}}c@{\hspace{5pt}}c@{\hspace{5pt}}c@{\hspace{5pt}}c@{\hspace{5pt}}c@{\hspace{5pt}}c@{\hspace{5pt}}c@{\hspace{5pt}}c}
 \toprule
-& Expectations &People\\
+\vspace{1.35cm}\\
+& Expectations 
+&\multicolumn{1}{c}{\begin{rotate}{\angle}SW Directors\end{rotate} }
+&\multicolumn{1}{c}{\begin{rotate}{\angle}Tech Leads\end{rotate} }
+&\multicolumn{1}{c}{\begin{rotate}{\angle}Team Leads\end{rotate} }
+&\multicolumn{1}{c}{\begin{rotate}{\angle}Developers\end{rotate} }
+&\multicolumn{1}{c}{\begin{rotate}{\angle}Qa \& Ops\end{rotate} }
+&\multicolumn{1}{c}{\begin{rotate}{\angle}Prod Mgmt\end{rotate} }
+&\multicolumn{1}{c}{\begin{rotate}{\angle}Project Mgmt\end{rotate}} 
+&\multicolumn{1}{c}{\begin{rotate}{\angle}Support \& Field\end{rotate}} \\
+%& Expectations & \multicolumn{2}{l}{People} \\
 \midrule
 %&&& $p_1$ & $p_2$& $p_3$& $p_4$& $p_5$& $p_6$& $p_7$& $p_8$& $p_9$& $p_{10}$& $p_{11}$& $p_{12}$& $p_{13}$& $p_{14}$& $p_{15}$& $p_{16}$& $p_{17}$& $p_{18}$& $p_{19}$& $p_{20}$& $p_{21}$& $p_{22}$& $p_{23}$& $p_{24}$& $p_{25}$& $p_{26}$& $p_{27}$& $p_{28}$& $p_{29}$& $p_{30}$& $p_{31}$& $p_{32}$& $p_{33}$& $p_{34}$& $p_{35}$& $p_{36}$\\
 %&&&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p&p\\
 %\midrule
 \textbf{Technical - Core} 
-&Write bug-fix code&  \w\w\l\w\g\b\b\b\g\w\w\w\w\w\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l \\
-&Maintain legacy code&  \w\w\l\w\g\b\b\b\g\w\w\w\w\w\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l\l \\
-&Write new-feature code&\\
-&Write customization (or script) code&\\
+&Write bug-fix code& \0\0&\1\1\1\1&\1\2\0\2\2&\1\1\1\0\1\0\2\1&\0\0\0\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0 \\
+&Maintain legacy code& \0\0&\0\1\2\1&\2\0\0\2\2&\2\0\2\0\2\2\0\0&\0\0\0\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0  \\
+&Write new-feature code& \0\0&\2\2\1\1&\1\2\0\2\1&\1\2\0\0\0\1\2\2&\0\0\0\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0 \\
+&Write customization (or script) code& \0\0&\0\0\0\0&\0\0\2\0\0&\0\0\0\2\0\0\0\0&\0\0\0\0&\0\0\0\1&\0\0\0&\0\2\0\0\0\0\\
 %& \\
 %
 %
 \midrule
 \textbf{Technical - Periphery}
-& Write build code&\\
-& Design user interface&\\
-& Write user documentation&\\
-& Bundle and prepare a release&\\
-& Write technical documentation&\\
-&Write low-level (or unit) test code&\\
-& Write experimental (or exploratory) code&\\
-& Write high-level (or integration) test code&\\
-& Write configuration and implementation code&\\
-& Write and maintain tools to aid in development&\\
+& Design user interface&\0\0&\2\1\0\0&\0\0\0\0\0&\0\0\0\0\0\0\0\2&\0\0\0\0&\1\2\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Write documentation&\0\0&\0\1\0\1&\0\0\1\0\1&\1\0\1\1\0\0\0\0&\1\0\1\0&\2\0\2\0&\0\0\0&\0\0\0\0\0\0\\
+&Write low-level (or unit) test code&\0\0&\1\1\0\1&\1\1\1\1\1&\1\1\0\1\1\1\0\0&\0\0\0\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Write Build Code and prepare a release&\0\0&\0\0\0\0&\0\0\0\1\0&\0\0\0\0\0\0\0\0&\0\0\2\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Write experimental (or exploratory) code&\0\0&\1\2\0\2&\0\0\0\0\0&\0\0\0\0\2\0\1\0&\0\0\0\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Write high-level (or integration) test code&\0\0&\0\0\1\0&\0\0\0\2\0&\0\0\0\0\0\0\0\0&\2\1\0\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Write configuration and implementation code&\0\0&\0\0\0\0&\0\0\1\0\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\0\0\0&\0\0\0&\0\2\0\0\0\0\\
+& Write and maintain tools to aid in development&\0\0&\0\0\0\1&\0\0\0\1\0&\0\0\0\0\0\0\0\0&\0\0\2\1&\0\0\0\0&\0\0\0&\0\0\0\0\0\0\\
 %& \\
 %
 %
 \midrule
 \textbf{Technical - High level}
-& Elicit requirements&\\
-& Document requirements&\\
-& Design system architecture&\\
-& Determine if product meets quality goals&\\
-& Set roadmap for system (prioritize requirements)&\\
-& Provide domain context to non-domain experts (user proxy)&\\
+& Design system architecture&\0\0&\2\2\2\2&\0\0\0\1\1&\0\0\0\0\0\0\0\1&\0\0\0\0&\1\0\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Elicit and document requirements&\0\0&\0\0\0\1&\0\0\0\1\1&\0\0\0\0\0\0\0\0&\0\0\0\0&\2\2\2\0&\0\0\0&\0\0\0\2\1\2\\
+& Determine if product meets quality goals&\1\0&\1\1\0\0&\1\0\0\1\0&\0\1\0\0\0\0\1\1&\2\2\1\2&\0\2\0\1&\0\0\0&\0\0\0\0\1\1\\
+& Set roadmap for system (prioritize requirements)&\1\0&\1\0\0\1&\1\0\0\2\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\2\2\2&\0\0\0&\0\0\0\0\2\1\\
+& Provide domain context to non-domain experts (user proxy)&\0\0&\0\0\0\0&\0\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\2\0\2&\0\0\0&\0\2\0\2\2\0\\
 %& \\
 %
 %
 \midrule
 \textbf{Technical - Expertise}
-& Tackle the toughest technical issues and bugs&\\
-& Provide historical perspective on design decisions&\\
-& Provide guidance (mentorship) to newcomers on technical issues&\\
+& Tackle the toughest technical issues and bugs&\0\0&\0\2\1\2&\2\0\2\0\0&\1\0\0\0\2\0\0\0&\0\0\0\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Provide historical perspective on design decisions&\0\0&\2\1\0\2&\0\0\0\0\0&\2\0\2\0\0\0\0\0&\0\1\0\0&\2\0\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Provide guidance (mentorship) to newcomers on technical issues&\0\0&\1\0\0\0&\0\0\2\2\2&\2\0\0\0\0\0\0\1&\0\0\0\0&\0\0\0\0&\0\0\0&\0\0\0\0\0\0\\
 %& \\
 %
 %
 \midrule
 \textbf{Technical - Management}
-& Monitor low-level task (ticket) progress&\\
-& Monitor high-level task (project) progress&\\
-& Determine lifecycle process and practices&\\
-& Document (notify) on one's own progress&\\
-& Assign low-level tasks (tickets) to individuals&\\
-& Assign high-level tasks (projects) to individuals&\\
-& Coordinate a product release or implementation&\\
-& Provide estimates on remaining or potential tasks&\\
-& Connect an issue with the person with appropriate expertise&\\
-& Handle obstacles and interruptions for technical teams (PoC)&\\
+& Determine lifecycle process and practices&\2\1&\1\0\0\0&\1\0\1\2\1&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\0\0\0&\1\2\0&\0\0\0\0\0\0\\
+& Assign low-level tasks (tickets) to individuals&\0\1&\1\0\0\0&\2\0\1\1\0&\0\0\0\0\0\0\0\0&\0\0\0\2&\0\0\1\0&\1\1\0&\1\2\1\0\0\0\\
+& Assign high-level tasks (projects) to individuals&\2\2&\0\0\0\1&\0\0\0\0\0&\0\0\0\0\0\0\00&\0\0\0\0&\0\0\1\0&\0\0\0&\0\0\0\0\0\0\\
+& Coordinate a product release or implementation&\1\1&\1\0\1\1&\2\0\0\2\0&\0\0\0\0\0\0\0\0&\0\1\2\2&\1\2\2\0&\2\2\1&\0\1\0\0\0\0\\
+& Provide estimates on remaining or potential tasks&\1\1&\2\1\1\0&\2\0\1\2\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\1\1\0&\2\2\1&\0\0\0\0\0\0\\
+& Connect an issue with the person with appropriate expertise&\1\1&\0\0\0\1&\2\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\0\0\0&\1\1\0&\1\2\2\0\1\0\\
+& Handle obstacles and interruptions for technical teams (PoC)&\1\2&\0\0\0\0&\2\1\1\0\1&\0\0\0\0\0\0\0\0&\0\0\0\2&\0\0\0\0&\2\2\2&\0\0\0\0\0\0\\
 %& \\
 %
 %
 \midrule
 \textbf{Organizational - External Interface}
-& Obtain new users&\\
-& Service current users&\\
-& Receive and respond to user feedback&\\
-& Obtain and maintain sources of funding&\\
-& Provide domain legitimacy to organization&\\
-& Provide technical legitimacy to organization&\\
-& Advocate for the resolution of user/customer problems&\\
-& Represent the organization's interests to funders/customers&\\
+& Receive and respond to user feedback&\0\2&\0\0\0\0&\0\1\0\1\1&\0\0\0\0\0\0\0\1&\0\0\0\1&\0\0\0\2&\2\2\0&\2\2\2\0\1\1\\
+& Obtain new users or sources of funding&\0\2&\0\0\0\0&\0\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\0\0\1&\0\0\0&\0\0\0\2\0\0\\
+& Provide domain legitimacy to organization&\0\0&\0\0\0\0&\0\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\2\0\2&\0\0\0&\0\0\0\0\0\0\\
+& Provide technical legitimacy to organization&\2\1&\2\0\0\2&\0\0\0\0\1&\0\0\0\0\0\0\0\0&\0\0\0\1&\0\0\0\0&\0\0\0&\0\0\0\0\0\0\\
+& Advocate for the resolution of user/customer problems&\1\2&\0\0\0\0&\1\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\1&\0\1\0\0&\2\2\0&\2\2\2\1\2\2\\
+& Represent the organization's interests to funders/customers&\0\2&\0\0\0\1&\0\1\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\1\0\2&\0\0\0&\0\0\0\1\1\1\\
 %& \\
 %
 %
 \midrule
 \textbf{Organizational - Management}
-& Deal with clerical issues&\\
-& Deal with financial issues&\\
-& Deal with personnel issues&\\
-& Deal with otherwise unattended issues&\\
-& Deal with system administration issues&\\
-& Set up and modify organizational structure&\\
-& Communicate organizational status and news&\\
+& Deal with personnel issues&\2\2&\0\1\0\0&\1\1\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\1&\0\0\0\1&\0\0\2&\0\0\1\0\0\0\\
+& Deal with otherwise unattended issues&\1\1&\0\0\0\1&\1\0\0\0\0&\0\0\0\0\0\0\0\0&\0\2\0\1&\0\1\0\1&\0\0\2&\0\0\0\0\0\0\\
+& Set up and modify organizational structure&\2\2&\0\0\0\1&\0\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\1&\0\0\1\1&\0\0\0&\0\0\1\0\0\0\\
+& Communicate organizational status and news&\2\2&\0\0\0\0&\1\0\1\0\0&\0\0\0\0\0\0\0\0&\0\0\0\1&\0\0\0\0&\1\1\1&\0\0\1\0\0\0\\
+& Deal with financial, clerical, or system administration issues&\0\1&\0\0\0\0&\0\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\1&\0\0\0\0&\0\0\2&\0\0\0\0\0\0\\
 %& \\
 %
 %
 \midrule
 \textbf{Organizational - Strategic}
-& Determine long-term vision for products&\\
-& Determine emphasis on new market areas&\\
+& Determine long-term vision for products&\1\2&\1\0\0\2&\0\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\2\0\2&\0\0\0&\0\0\0\0\0\0\\
+& Determine emphasis on new market areas&\0\1&\0\0\0\1&\0\0\0\0\0&\0\0\0\0\0\0\0\0&\0\0\0\0&\0\2\0\1&\0\0\0&\0\0\0\0\0\0\\
 %& \\
 \bottomrule
 \end{tabular}
