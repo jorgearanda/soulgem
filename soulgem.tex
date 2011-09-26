@@ -168,13 +168,13 @@ We performed a qualitative empirical study based on the theoretical framework pr
 
 We formulated eight research questions to guide our data collection and analysis. For each of them, we also formulated a corresponding proposition based on the theoretical framework we delineate above.
 
-\textbf{\emph{RQ1:}} Do roles vary considerably between and within software organizations?
+\textbf{\emph{RQ1:}} What common roles are there in software organizations? Of what expectations are they built from? Can we provide a simple classification of roles?
+
+\emph{Proposition:} We do not expect to be able to provide a simple classification of roles. However, we hypothesize that some expectations often come together, and that these patterns will form a partial picture of roles in software development.
+
+\textbf{\emph{RQ2:}} Do roles vary considerably between and within software organizations?
 
 \emph{Proposition:} Roles vary considerably both between software organizations and within them. The sets of expectations placed on their members are different in significant ways.
-
-\textbf{\emph{RQ2:}} What common roles are there in software organizations? Of what expectations are they built from? Can we provide a simple classification of roles?
-
-\emph{Proposition:} We do not expect to be able to provide a simple classification of roles. However, we hypothesize that some expectations often come together, and that these patterns will allow us to form a partial picture of roles in software development.
 
 \textbf{\emph{RQ3:}} What is the logic (what are the factors) behind the particular clusters of expectations found in software organizations?
 
@@ -249,9 +249,20 @@ We present our findings organized by the research question they address.
 
 \input{expectationPeopleTable}
 
-\subsection{Role Variation (RQ1)}
 
-We found overwhelming evidence of variation in roles between and within organizations. In fact, it was difficult to find people in any site with roughly the same role. We offer several examples of this phenomenon, as well as the few counterexamples we found.
+\subsection{Role Commonalities and Expectations (RQ1)}
+
+There is no simple classification of roles in the organizations we studied. However, we believe that, should we continue studying more groups, some patterns in role definitions would begin to emerge. We can see the beginnings of such patterns in Table \ref{tableExpectations}, which shows the expectations placed on the people we interviewed (about half of the total number of organization members). The columns in the table represent our interviewees; the rows represent common or significant expectations. The reader should note that our list of expectations is necessarily incomplete for the general case. It is also somewhat subjective, as expectations in our interviews and observations were not always clearly articulated and our participants did not always agree on their expectation assignments.
+
+For instance, working on the technical core of the organizations' products is reserved almost exclusively for developers and their more senior differentiations, technical and team leads. However, the leads' expectations are more spread out: technical leads focus more on architecture and design issues, whereas team leads emphasize coordination activities. There are also purely organizational roles; their enactors do not need any domain or technical expertise. But in both organizations there were key people with more than one kind of expertise (technical, domain, and organizational), and these people seemed vital for the functioning of the organization, as they transitioned between boundaries with ease. A representative example is a Gallium Field Specialist (the second column in the Support \& Field cluster), who straddles all three kinds of expertise. Several people in different areas pointed out his relevance; in the words of one informant, ``the company depends on [him] so much he should have armed guards behind him taking him to and from work.''
+
+There are several other patterns in expectation assignment in our data. For space reasons we only point out three more. First, all the system architecture expectations were placed on people still working on the technical core, writing new feature and bug fix code. This is in contrast to our anecdotal experiences in larger organizations. Second, group members that provide domain legitimacy or credibility were critical at both organizations, and they are expected to influence product development at a high level, but not to tinker with implementation details. And third, some expectations, such as writing unit tests and documentation, were weakly spread out through the technical side of the organizations. Everyone expects developers to ``play nice'' by testing and documenting their own code, but it is culturally acceptable to ignore these expectations if the urgency of the situation demands it, as it often does.
+
+% TODO: Check build code expectation in Cobalt.
+
+\subsection{Role Variation (RQ2)}
+
+As Table \ref{tableExpectations} suggests, we found a considerable evidence of variation in roles between and within organizations. In fact, it was difficult to find people in either site with the same role in significant detail. We offer several examples of this phenomenon, as well as the few counterexamples we found.
 
 \emph{Product Managers, Gallium:} There are mainly three people with the role of steering the organization's products, prioritizing its backlog, and coordinating with customers. These are the two Product Managers and the Product Design Lead. Some Gallium employees see the work of the three as interchangeable: one of them will be in charge of the high-level decisions of the product they're working on, and to some extent, they believe that these three people are in control of the product's direction. Others (typically those who have a closer interaction with this trio) assign different expectations to each, and a closer look reveals that there are indeed significant differences between their activities. The Product Design Lead is concerned with documenting the requirements of new functionality, he fulfills a ``historian'' responsibility (sharing design rationale with developers and explaining the pitfalls in some approaches), and he is active in shaping the organizational structure, having helped create some groups and practices throughout his time in the organization. Of the two Product Managers, one has an inside-looking approach, coordinating the development of a product and determining what requirements will make it into the product's roadmap, and when. The other Product Manager has a more outside-looking approach. He has a Ph.D.\ in the organization's area of expertise, and his presence at client meetings, trade shows, and conferences legitimizes the organization. He also understands how the users would interact with the product, and provides feedback on how to improve the product's workflow and user interface to bring it closer to the users' mental model. Additionally, we could argue that other people in the organization also performed some Product Management activities unofficially: A Customer Services Representative or a Field Specialist could persuade developers to focus on the features that cause them the most pain, for example. In sum, although all three employees have similar goals, the detailed expectations placed on them vary considerably, and are not interchangeable. Furthermore, people without a Product Management position also have some unofficial Product Management expectations.
 
@@ -264,19 +275,6 @@ We found overwhelming evidence of variation in roles between and within organiza
 \emph{Project Managers, Gallium:} These project managers are an interesting counterexample to our first finding, to some extent. Although there are significant distinctions between them (one has a project management leader role, another creates templates and institutes new processes, and a third and more junior project manager implements them), the similarities in their roles seem to outweigh the differences. The main reason seems to be that these Project Managers bring a fairly specific and standardized way of doing things with them, in the form of a Project Management Body of Knowledge and certification. Part of their strategy appears to be to define their role with sufficient precision, and to enforce their definition in the rest of the organization. No other role that we examined had the emphasis on role definition and consistency that the Gallium Project Managers had.
 
 In summary, as proposed by our theoretical framework, \textbf{we found inconsistent role definitions both within and between organizations}. Roles (sets of expectations) are socially constructed: a developer here is not the same as a developer there, since what we expect of developers here and there varies. Part of the social construction occurs at the societal level, so that we generally expect testers to test, developers to develop, and managers to manage. In one case, such as that of Project Managers at Gallium, this broader influence is strong enough to shape most aspects of the role. In most roles in the software organizations we studied, however, this is not the case, and most of the relevant details of what it actually means to test, develop, or manage is defined by the group.
-
-
-\subsection{Role Commonalities and Expectations (RQ2)}
-
-As expected, we could not provide a simple classification of roles. However, we believe that, should we continue studying more organizations, some patterns in role definitions would begin to emerge.
-
-We can see the beginnings of such patterns in Table X, which shows the expectations placed on the people we interviewed (but not on all the members of the organizations we studied). The columns in the table are arranged by positions, so that people with roughly similar positions\footnote{An exact matching of people to positions was impractical.} in the two organizations are grouped together. The rows in the table represent common or significant expectations. The reader should note that this list of expectations is necessarily incomplete for the general case and somewhat subjective, as expectations in our interviews and observations were not always clearly articulated and our participants did not always agree on their expectation assignments.
-
-In the case of experienced developers, for instance, we found a shifting emphasis towards providing guidance to newcomers, helping team members understand the rationale behind design decisions in legacy code, experimenting with novel approaches and techniques, having a greater say in architectural decisions, and providing the organization with technical authority in its meetings with current or potential customers. In other words, they transition towards expectations that are centred on their experience and expertise.
-
-% TODO: Revisit this. Do we have something to say about other role flavours here? 
-
-% I think it will be worth listing all the important ones. Perhaps more than a list? The key ideas here are that (a) these expectations *need* to be satisfied, or the performance of the organization will suffer, (b) some of them are conceptually closer to each other, and having them be carried out by the same person or persons should be more effective from a coordination perspective (see Proportionality, Maturity), and (c) understanding these patterns of responsibility pairing should yield efficiency gains more generalized.
 
 
 \subsection{Expectation Clustering (RQ3)}
