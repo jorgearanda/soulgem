@@ -1,0 +1,15 @@
+We thank the reviewers for their thoughtful comments.  
+
+  All three inquired on our interview protocol and format. Our interviews were semi-structured, and our study materials will be placed online. 
+
+The  Study Design section should describe our methods better: We carried out an explanatory case study, as per Yin. In such a study, researchers do not begin with a blank slate (in contrast to Grounded Theory). They take advantage of preexisting theories which, if correct, have consequences for the domain of study. These consequences are stated as propositions. Reviewer 3 considers that 'hypotheses' is a better term; our paper uses Yin's terms.   The interviews were transcribed by Aranda, and analyzed following Yin's approach: for each proposition we formulated linking logic statements in advance (descriptions of what data would support or refute the proposition, and how to obtain it). These statements guided our data collection. We will expand on our methodological description.
+
+Reviewer 1 says that the theoretical framework is actually a clarification of concepts. We do clarify concepts, but we also link them to produce the propositions that form the basis for the study. We chose to label it a framework as it is not concrete enough to be a theory, but interconnected and stimulating enough to build research on top of it. 
+
+Reviewer 2 asked why the word "ethnography" was not used. Ethnographies tend to be more theory-neutral at start, whereas we drew from decades of sociological research to guide our research.
+
+  Reviewer 2 asks if the table represents expectations from the self, others, or a mix. It is a mix and we will clarify this in a revised version. As a follow-up, we are working on a finer distinction of expectations, including representing conflicts between self- and other-rated expectations, and on measuring role differentiation with cluster analysis, which is akin to Reviewer 2's suggestion to use the Hamming distance.
+
+  Reviewer 3 mentions our small sample size, short research period, and small organization size. We would like the reviewer to consider the nature of qualitative research. Two organizations would be an extremely small sample for an experiment, but a single informative case may be enough in case study research: we strive for generalization to a theory, not to a population (as per Yin's suggestion). Our research period allowed us to interview half of the workforce at both sites, and later interviews added little information. We expect larger organizations to offer further insights; we aim to report on them in the near future.
+
+We wish our findings on the meaning of roles in industry will be of benefit to the community, and we thank the reviewers for their attention.
